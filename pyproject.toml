@@ -1,0 +1,21 @@
+[project]
+name = "studyaiagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tangjie", email = "tangjie466@icloud.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=1.4.1",
+    "openai>=3.14.1",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+studyaiagent = "studyaiagent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
